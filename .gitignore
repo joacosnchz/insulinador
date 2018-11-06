@@ -1,0 +1,14 @@
+*.sublime-*
+*.DS_Store
+
+/app-insulinador/platforms/android/
+/app-insulinador/platforms/ios/
+/app-insulinador/platforms/browser/
+/app-insulinador/plugins/cordova-plugin-*/
+/app-insulinador/assets/
+/app-insulinador/node_modules/
+
+/ws-insulinador/node_modules/
+/ws-insulinador/127.0.0.1
+/ws-insulinador/*.pdf
+

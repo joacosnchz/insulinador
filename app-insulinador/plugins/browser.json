@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.sanchez.insulinador"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.sanchez.insulinador"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.sanchez.insulinador"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.sanchez.insulinador"
+        }
+    },
+    "dependent_plugins": {}
+}

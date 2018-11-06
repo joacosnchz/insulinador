@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/framework7.ios.min.css">
+        <link rel="stylesheet" type="text/css" href="css/framework7.ios.colors.min.css">
+        <link rel="stylesheet" type="text/css" href="css/framework7-icons.css">
+        <title>Insulinador</title>
+        <style>
+            .infinite-scroll-preloader {
+              margin-top:-20px;
+              margin-bottom: 10px;
+              text-align: center;
+            }
+            .infinite-scroll-preloader .preloader {
+              width:34px;
+              height:34px;
+            } 
+        </style>
+    </head>
+    <body>
+        <!-- Status bar overlay for full screen mode (PhoneGap) -->
+        <div class="statusbar-overlay"></div>
+        <!-- Panels overlay-->
+        <div class="panel-overlay"></div>
+        
+        <div class="panel panel-left panel-cover">
+            <div class="content-block">
+                <p>Menú</p>
+                <p><a href="comida.html">Nueva comida</a></p>
+                <p><a href="comidas.html">Lista de comidas</a></p>
+                <p><a href="imprimir.html">Enviar para imprimir</a></p>
+            </div>
+        </div>
+
+        <!-- Views -->
+        <div class="views">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Top Navbar-->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left"><a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a></div>
+                        <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                        <div class="center sliding">Inicio</div>
+                    </div>
+                </div>
+                <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+                <div class="pages navbar-through toolbar-through">
+                    <!-- Page, "data-page" contains page name -->
+                    <div data-page="index" class="page">
+                        <!-- Scrollable page content -->
+                        <div class="page-content">
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="nueva-comida.html" class="item-link item-content">
+                                            <div class="item-media"><i class="f7-icons">add</i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title">Nueva comida</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="comidas.html" class="item-link item-content">
+                                            <div class="item-media"><i class="f7-icons">list</i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title">Lista de comidas</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="imprimir.html" class="item-link item-content">
+                                            <div class="item-media"><i class="f7-icons">email</i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title">Enviar para imprimir</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/nueva-comida.js"></script>
+        <script type="text/javascript" src="js/select_alimentos.js"></script>
+        <script type="text/javascript" src="js/comidas.js"></script>
+        <script type="text/javascript" src="js/comida.js"></script>
+        <script type="text/javascript" src="js/imprimir.js"></script>
+    </body>
+</html>

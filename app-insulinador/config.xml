@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sanchez.insulinador" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Insulinador</name>
+    <description>
+        Aplicación para el registro de incorporación de insulina
+    </description>
+    <author email="sanchezjoaquin1995@gmail.com">
+        Sánchez Joaquín
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+        <allow-intent href="market:*" />
+        <icon density="hdpi" height="57" src="assets/icon_hdpi.png" width="57" />
+        <icon density="mdpi" height="57" src="assets/icon_mdpi.png" width="57" />
+        <icon density="ldpi" height="57" src="assets/icon_ldpi.png" width="57" />
+        <icon density="xhdpi" height="57" src="assets/icon_xhdpi.png" width="57" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="browser" spec="~4.1.0" />
+    <engine name="ios" spec="^4.4.0" />
+    <plugin name="cordova-plugin-file" spec="^5.0.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
+    <plugin name="cordova-plugin-network-information" spec="^1.3.4" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+</widget>

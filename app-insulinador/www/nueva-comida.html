@@ -1,0 +1,116 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Atrás</span>
+            </a>
+        </div>
+        <div class="center sliding">Nueva comida</div>
+    </div>
+</div>
+
+<div class="pages">
+    <!-- Page, "data-page" contains page name -->
+    <div data-page="nueva-comida" class="page">
+        <!-- Scrollable page content -->
+        <div class="page-content">
+            <div class="content-block">
+                <form action="#" method="POST">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Fecha</div>
+                                        <div class="item-input">
+                                            <input type="text" required="required" class="fecha_comida" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Hora</div>
+                                        <div class="item-input">
+                                            <input type="text" required="required" class="hora_comida" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Tipo</div>
+                                        <div class="item-input">
+                                            <select required="required" class="tipo_comida">
+                                                <option value="Desayuno">Desayuno</option>
+                                                <option value="Almuerzo">Almuerzo</option>
+                                                <option value="Merienda">Merienda</option>
+                                                <option value="Cena">Cena</option>
+                                                <option value="Colación">Colación</option>
+                                                <option value="Otro">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Glucemia</div>
+                                        <div class="item-input">
+                                            <input type="number" pattern="[0-9]*" required="required" class="glucemia" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="select_alimentos.html" class="item-link item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Alimentos</div>
+                                        <div class="item-after">Seleccionar alimentos</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Carbohidratos</div>
+                                        <div class="item-input">
+                                            <input type="number" pattern="[0-9]*" required="required" class="carbohidratos_totales" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Insulina</div>
+                                        <div class="item-input">
+                                            <input type="number" pattern="[0-9]*" required="required" class="insulina" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"><input type="submit" class="button" value="Aceptar" /></div>
+                                        <div class="item-input">
+                                            <a href="#" class="button back">Cancelar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+            <div class="alimentos_hidden"></div>
+            <input type="hidden" class="insulina_carbohidratos" />
+        </div>
+    </div>
+</div>

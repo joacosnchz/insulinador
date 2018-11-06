@@ -1,0 +1,50 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Atrás</span>
+            </a>
+        </div>
+        <div class="center sliding">Lista de comidas</div>
+    </div>
+</div>
+
+<div class="pages">
+    <!-- Page, "data-page" contains page name -->
+    <div data-page="comidas" class="page">
+        <!-- Scrollable page content -->
+        <div class="page-content infinite-scroll">
+        	<div class="list-block">
+                <ul class="lista-comidas"></ul>
+                <ul class="seleccion-comidas"></ul>
+            </div>
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+            </div>
+        </div>
+
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner">
+                    <a href="#" class="link borrar">Borrar</a>
+                    <a href="#" class="link cancelar">Cancelar</a>
+                </div>
+            </div>
+
+		<div class="item-prototype">
+            <li>
+                <a href="#" class="item-link item-content item-comida">
+                    <div class="item-media selectors">
+                        <i class="f7-icons not-checked">circle</i>
+                        <i class="f7-icons color-blue yes-checked" value="__id_comida__">check_round_fill</i>
+                        <!-- <input type="checkbox" class="id_comida_check" value="__id_comida__" /> -->
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title">__descripcion__</div>
+                        <input type="hidden" class="id_comida" value="__id_comida__" />
+                    </div>
+                </a>
+            </li>
+		</div>
+    </div>
+</div>

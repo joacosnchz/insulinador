@@ -1,0 +1,8 @@
+*.sublime-*
+/platforms/android/
+/platforms/ios/
+/platforms/browser/
+/plugins/cordova-plugin-*/
+/assets/
+/node_modules/
+.DS_Store
